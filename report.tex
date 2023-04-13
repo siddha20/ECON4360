@@ -1,0 +1,92 @@
+\documentclass[12pt]{article}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{setspace}
+\usepackage{fancyvrb}
+\usepackage{float}
+\usepackage{parskip}
+\usepackage{longtable}
+\usepackage{ltcaption}
+
+\onehalfspacing
+
+\geometry{letterpaper, portrait, margin=1in}
+
+\begin{document}
+\noindent Siddha Kilaru \hfill ECON 4360 \\
+February 22, 2023 \\
+
+\begin{center}
+    \large\text{Replication Report on} \\
+    \large\textbf{----} \\ by ----\\
+\end{center}
+\vspace*{1cm}
+
+\newpage 
+\section{Results}
+
+\begin{table}[!htbp] \centering
+    \scalebox{.8}{
+    \begin{tabular}{@{\extracolsep{5pt}}lcccc}
+    \multicolumn{4}{c}{\textbf{Table 1:} Risky Choice Chosen as Dependent Variable} \\
+    \hline
+    % \hline \\[-1.8ex]
+    & \multicolumn{3}{c}{\textbf{Replication}} & \textbf{DJ} \
+    \cr \cline{2-4}\cline{5-5}
+    \\[-1.8ex] & (1) & (2) & (3) & (1) \\
+    \hline \\[-1.8ex]
+     8-Digit Number & 0.049$^{}$ & 0.049$^{}$ & 0.049$^{}$ & -0.122$^{***}$\\
+      & (0.068) & (0.065) & (0.064) & (0.023)\\
+     Female & & -0.309$^{***}$ & -0.366$^{***}$ \\
+      & & (0.077) & (0.083) \\
+     LatHisSpan & & & -0.345$^{***}$ \\
+      & & & (0.106) \\
+     White & & & 0.012$^{}$ \\
+      & & & (0.083) \\
+    Constant & 0.608$^{***}$ & 0.681$^{***}$ & 0.725$^{***}$ \\
+      & (0.048) & (0.050) & (0.073) \\
+    \hline \\[-1.8ex]
+     Observations & 204 & 204 & 204 & 1879\\
+     $R^2$ & 0.003 & 0.077 & 0.126 & 0.232\\
+    \hline \\[-1.8ex]
+    \end{tabular}} {\parbox{3.7in}{ \footnotesize Note: The regression for DJ
+    already accounts for subject-fixed effects. Standard errors are given in
+    parentheses. \newline Significance: $^{*}$p$<$0.1; $^{**}$p$<$0.05;
+    $^{***}$p$<$0.01} }
+\end{table}
+
+\begin{table}[!htbp] \centering
+    \scalebox{.8}{
+    \begin{tabular}{@{\extracolsep{5pt}}lcccc}
+    \multicolumn{4}{c}{\textbf{Table 2:} Earlier Option Chosen as Dependent Variable} \\
+    \hline
+    % \hline \\[-1.8ex]
+    & \multicolumn{3}{c}{\textbf{Replication}} & \textbf{DJ} \
+    \cr \cline{2-4}\cline{5-5}
+    \\[-1.8ex] & (1) & (2) & (3) & (1) \\
+    \hline \\[-1.8ex]
+    8-Digit Number & 0.049$^{}$ & 0.049$^{}$ & 0.049$^{}$ & -0.041$^{**}$ \\
+    & (0.056) & (0.056) & (0.055) & (0.018) \\
+    Female & & -0.072$^{}$ & -0.057$^{}$ \\
+    & & (0.066) & (0.071) \\
+    LatHisSpan & & & -0.202$^{**}$ \\
+    & & & (0.090) \\
+    White & & & -0.152$^{**}$ \\
+    & & & (0.071) \\
+    Constant & 0.176$^{***}$ & 0.193$^{***}$ & 0.330$^{***}$ \\
+    & (0.040) & (0.043) & (0.063) \\
+    \hline \\[-1.8ex]
+     Observations & 204 & 204 & 204 & 2597\\
+     $R^2$ & 0.003 & 0.077 & 0.126 & 0.315\\
+    \hline \\[-1.8ex]
+    \end{tabular}} {\parbox{3.7in}{ \footnotesize Note: The regression for DJ
+    already accounts for subject-fixed effects. Standard errors are given in
+    parentheses. \newline Significance: $^{*}$p$<$0.1; $^{**}$p$<$0.05;
+    $^{***}$p$<$0.01} }
+\end{table}
+
+
+\end{document}
